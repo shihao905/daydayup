@@ -35,8 +35,7 @@
  * @return {string[]}
  */
 ```
-#### 方法一：深度优先搜索（DFS）
-[BFS & DFS 算法介绍](https://zhuanlan.zhihu.com/p/40151973)
+#### 方法一：深度优先搜索（DFS）递归
 ```js
 var binaryTreePaths = function(root) {
     let paths = []
@@ -56,7 +55,7 @@ var binaryTreePaths = function(root) {
     return paths
 };
 ```
-#### 方法一：广度优先搜索（BFS）
+#### 方法二：广度优先搜索（BFS）
 ```js
 var binaryTreePaths = function(root) {
     let paths = []
@@ -83,6 +82,6 @@ var binaryTreePaths = function(root) {
         }
       }
     }
-    return paths.re
+    return paths
 };
 ```
